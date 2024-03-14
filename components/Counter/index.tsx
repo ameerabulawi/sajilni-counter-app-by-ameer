@@ -3,11 +3,17 @@ import React, { useState } from 'react';
 
 import styles from './Counter.module.css'
 
+export type CounterProps = {
+    maxCounter: number
+    initialCount: number
+    interval: number
+}
 
-export const Counter: React.FC = () => {
-    const maxCounter = 10
-    const initialCount = 0
-    const interval = 1
+export const Counter: React.FC<CounterProps> = ({
+    maxCounter = 10,
+    initialCount = 0,
+    interval = 1
+}) => {
     const [count, setCount] = useState<number>(initialCount);
 
     const increment = (): void => {

@@ -29,7 +29,11 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Counter />
+        <Counter
+          initialCount={0}
+          interval={1}
+          maxCounter={10}
+        />
       </div>
 
     </main>
