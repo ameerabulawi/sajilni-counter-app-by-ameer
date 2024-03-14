@@ -1,0 +1,43 @@
+.button {
+  width: 150px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.counter {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.actionsWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem
+}
+
+.counterTitle{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.counterCount{
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 900;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maxCountReched{
+    background-color: #b5c8fb;
+    color:#060060;
+    padding: 1rem;
+    border-radius: 5px;
+}
